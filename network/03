@@ -1,1 +1,6 @@
-ifconfig en1 | grep "ether " | cut -d " " -f2
+# Задание: Определить MAC-адрес карты Wi-Fi
+
+# Решение: Параметр en0 относится к проводному подключению Ethernet,
+# en1 — это, как правило, беспроводной адаптер (Wi-Fi).
+
+ifconfig en1 | grep 'ether' | cut -d ' ' -f2

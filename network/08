@@ -1,0 +1,8 @@
+# Задание: найти провайдера slash16.org
+
+# Решение: Сначала находим IP адрес slash16.org.
+# Потом с помощью команды whois определим кому принадлежит slash16.org.
+# Провайдером является Amazon Technologies Inc.
+
+nslookup slash16.org
+whois 13.33.242.215
