@@ -7,7 +7,7 @@
 # для удаления домашнего каталога пользователя и почтового ящика в команду добавляется флаг -r. 
 
 #!/bin/bash
-USER="$(whoami)"
-echo $USER
-pgrep -u $USER | while read PID; do sudo kill $PID; done
-sudo userdel -r $USER
+user="nameuser"
+echo $user
+pgrep -u $user | while read PID; do sudo kill $PID; done
+sudo userdel -r $user
